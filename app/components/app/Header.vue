@@ -20,7 +20,9 @@ const actions: { icon: MainIcon; path: string }[] = [
 <template>
   <header :class="$style['app-header']">
     <div :class="[containers.large, $style['app-header__inner']]">
-      <img src="~/assets/images/svg/logo.svg" alt="logo" :class="$style['app-header__logo']" />
+      <NuxtLinkLocale :to="{ name: 'index' }">
+        <img src="~/assets/images/svg/logo.svg" alt="logo" :class="$style['app-header__logo']" />
+      </NuxtLinkLocale>
 
       <div :class="$style['app-header__actions']">
         <NuxtLinkLocale v-for="action in actions" :key="action.path" :to="{ name: action.path }">
