@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
-  middleware: ['redirect-if-authorized']
-})
+  middleware: ['redirect-if-authorized'],
+});
 
 const { t } = useI18n();
 const userStore = useUserStore();

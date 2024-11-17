@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  middleware: ['require-authentication']
+  middleware: ['require-authentication'],
 });
 
 const { t } = useI18n();
@@ -10,7 +10,7 @@ userStore.loadUserInfo();
 
 useHead(() => ({
   title: t('pages.profile.meta.title'),
-}))
+}));
 </script>
 
 <template>

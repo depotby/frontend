@@ -2,8 +2,8 @@
 const { t } = useI18n();
 
 useHead(() => ({
-  title: t('pages.index.meta.title')
-}))
+  title: t('pages.index.meta.title'),
+}));
 </script>
 
 <template>

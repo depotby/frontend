@@ -6,6 +6,9 @@
     "sign_in": "Вход",
     "sign_up": "Регистрация"
   },
+  "navigation": {
+    "index": "Главная"
+  },
   "pages": {
     "index": {
       "meta": {

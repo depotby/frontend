@@ -3,11 +3,11 @@ import path from 'path';
 // @ts-expect-error old lib without types
 import svgstore from 'svgstore';
 
-const SPRITES = ['main', 'landing'];
+const SPRITES = ['main'];
 const EXTENSION = '.svg';
 
-const iconsDirectory = path.resolve(import.meta.dirname, '../assets/icons');
-const spritesDirectory = path.resolve(import.meta.dirname, '../assets/sprites');
+const iconsDirectory = path.resolve(import.meta.dirname, '../app/assets/icons');
+const spritesDirectory = path.resolve(import.meta.dirname, '../app/assets/sprites');
 
 const getIconsNames = (iconsPath: string) =>
   fs
