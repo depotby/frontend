@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "title_template": "%s - Depot"
+  },
+  "labels": {
+    "sign_in": "Вход",
+    "sign_up": "Регистрация"
+  },
+  "pages": {
+    "index": {
+      "meta": {
+        "title": "Главная"
+      }
+    },
+    "authentication": {
+      "sign_in": {
+        "meta": {
+          "title": "Вход"
+        }
+      },
+      "sign_up": {
+        "meta": {
+          "title": "Регистрация"
+        }
+      }
+    },
+    "profile": {
+      "meta": {
+        "title": "Профиль"
+      }
+    }
+  }
+}

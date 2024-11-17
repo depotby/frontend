@@ -28,3 +28,7 @@ export interface AuthenticationCreationResponse {
     refresh: string;
   };
 }
+
+export interface AuthenticationRefreshRequest {
+  token: string;
+}

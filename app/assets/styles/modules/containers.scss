@@ -1,0 +1,18 @@
+.small,
+.medium,
+.large {
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.small {
+  max-width: 720px;
+}
+
+.medium {
+  max-width: 960px;
+}
+
+.large {
+  max-width: 1140px;
+}
