@@ -47,7 +47,10 @@ export const useUserStore = defineStore('user', () => {
   };
 
   const signOut = async (skipRequest = false) => {
-    if (!skipRequest) await api;
+    if (!skipRequest) await api.authentication.signOut();
+
+    access_token.value = undefined;
+    refresh_token.value = undefined;
   };
 
   return {

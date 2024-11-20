@@ -1,5 +1,7 @@
 import { FetchError } from 'ofetch';
 
+let refresh: Promise<any> | null = null;
+
 export const useFetchInstance = () => {
   const runtimeConfig = useRuntimeConfig();
   const userStore = useUserStore();
@@ -17,6 +19,9 @@ export const useFetchInstance = () => {
           await userStore.refresh();
         } catch (e) {
           if (e instanceof FetchError && e.response?.status === 401) {
+            if (!refresh) refresh = userStore.signOut(true);
+            await refresh;
+            refresh = null;
           }
         }
       }

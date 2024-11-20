@@ -22,6 +22,8 @@ useSeoMeta({
 
 <template>
   <div :class="$style['layout-default']">
+    <NuxtLoadingIndicator />
+
     <AppHeader :class="$style['layout-default__header']" />
 
     <div :class="$style['layout-default__main']">
@@ -33,6 +35,11 @@ useSeoMeta({
 <style module lang="scss">
 .layout-default {
   padding-block-start: $app-header-height;
+
+  &,
+  &__main {
+    min-height: 100dvh;
+  }
 
   &__header {
     position: fixed;

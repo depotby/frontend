@@ -4,7 +4,13 @@
   },
   "labels": {
     "sign_in": "Вход",
-    "sign_up": "Регистрация"
+    "sign_up": "Регистрация",
+    "email": "Email",
+    "password": "Пароль",
+    "email_example": "user{'@'}example.com"
+  },
+  "action": {
+    "sign_in": "Войти"
   },
   "navigation": {
     "index": "Главная"
