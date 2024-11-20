@@ -17,6 +17,7 @@ export const useFetchInstance = () => {
       if (error.response.status === 401 && !error.options.__signIn && !error.options.__refresh) {
         try {
           await userStore.refresh();
+          return await $fetch(error.request);
         } catch (e) {
           if (e instanceof FetchError && e.response?.status === 401) {
             if (!refresh) refresh = userStore.signOut(true);
