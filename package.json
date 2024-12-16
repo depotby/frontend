@@ -33,7 +33,7 @@
     "@vue/eslint-config-typescript": "^14.1.4",
     "eslint": "^9.17.0",
     "eslint-plugin-oxlint": "^0.15.2",
-    "eslint-plugin-vue": "^9.31.0",
+    "eslint-plugin-vue": "^9.32.0",
     "prettier": "^3.4.2",
     "sass": "^1.83.0",
     "svgstore": "^3.0.1",
