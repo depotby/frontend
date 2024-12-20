@@ -7,7 +7,7 @@ export const useApi = (): Api => {
   return {
     authentication: {
       create: (body) => http('/v1/authentications', { method: 'post', body, __signIn: true }),
-      refresh: (body) => http('/v1/authentications', { method: 'put', body, __refresh: true }),
+      refresh: (body) => http('/v1/authentications/refresh', { method: 'post', body, __refresh: true }),
       signOut: () => http('/v1/authentications', { method: 'delete' }),
     },
     user: {
