@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^10.1.0",
-    "@vue/eslint-config-typescript": "^14.2.0",
+    "@vue/eslint-config-typescript": "^14.3.0",
     "eslint": "^9.18.0",
     "eslint-plugin-oxlint": "^0.15.6",
     "eslint-plugin-vue": "^9.32.0",
