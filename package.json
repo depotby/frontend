@@ -35,7 +35,7 @@
     "eslint-plugin-oxlint": "^0.15.6",
     "eslint-plugin-vue": "^9.32.0",
     "prettier": "^3.4.2",
-    "sass": "^1.83.1",
+    "sass": "^1.83.4",
     "svgstore": "^3.0.1",
     "tsx": "^4.19.2"
   }
